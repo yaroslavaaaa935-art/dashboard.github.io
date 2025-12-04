@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Дашборд UI-компонентов</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Дашборд UI-компонентов</h1>
+    <div class="controls">
+      <div class="add-menu">
+        <button id="add-widget-btn">Добавить виджет</button>
+        <div id="widget-list" class="widget-list">
+          <button data-widget="Weather">Погода</button>
+          <button data-widget="Currency">Курсы валют</button>
+          <button data-widget="Quote">Случайная цитата</button>
+          <button data-widget="ToDo">Список дел</button>
+          <button data-widget="Timer">Таймер</button>
+          <button data-widget="Notes">Заметки</button>
+        </div>
+      </div>
+      <div class="backup">
+        <button id="export-config">Экспорт JSON</button>
+        <input id="import-file" type="file" accept="application/json" style="display:none">
+        <button id="import-config">Импорт JSON</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="dashboard" class="dashboard-grid" aria-live="polite"></section>
+  </main>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

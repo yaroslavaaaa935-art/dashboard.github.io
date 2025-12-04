@@ -1,0 +1,276 @@
+/* ToDo Widget */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.todo-item:hover {
+  background: rgba(37,99,235,0.05);
+}
+
+.todo-item input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.todo-item span {
+  flex: 1;
+}
+
+.todo-item.done span {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+/* Notes Widget */
+.notes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.note {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(15,23,42,0.08);
+  background: linear-gradient(180deg,#fff,#f8fafc);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Timer Widget */
+.timer-display {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.timer-controls button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid rgba(15,23,42,0.1);
+  background: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.timer-controls button:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.quote-text {
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+.currency-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+}
+
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.widget-settings input {
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(15,23,42,0.1);
+  width: 60px;
+}
+
+.widget-settings button {
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid rgba(15,23,42,0.1);
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.widget-settings button:hover {
+  background: #1e40af;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #fff, #f9fafb);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.todo-item:hover {
+  background: linear-gradient(90deg, #f0f4ff, #e0e7ff);
+}
+
+.todo-item span {
+  flex: 1;
+  margin-left: 0.5rem;
+}
+
+.todo-item input[type="checkbox"] {
+  transform: scale(1.2);
+  accent-color: var(--accent);
+}
+
+.todo-item button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #ef4444;
+  font-weight: bold;
+  padding: 0 0.25rem;
+  border-radius: 4px;
+}
+
+.todo-item button:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.currency-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #f1f5f9;
+  font-weight: 500;
+}
+
+.currency-row:last-child {
+  border-bottom: none;
+}
+
+.rates-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.currency-row:hover {
+  background: rgba(37, 99, 235, 0.05);
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.quote-text {
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  padding: 0.5rem 0.75rem;
+  border-left: 3px solid var(--accent);
+  background: #f1f5ff;
+  border-radius: 6px;
+}
+
+.quote-text::before {
+  content: "“";
+
+  vertical-align: top;
+  margin-right: 0.1rem;
+}
+
+.quote-text::after {
+  content: "”";
+  font-size: 1.5rem;
+  vertical-align: bottom;
+  margin-left: 0.2rem;
+}
+
+.next-quote {
+  padding: 0.4rem 0.7rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.next-quote:hover {
+  background: #1e40af;
+}
+
+.notes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.note {
+  padding: 0.3rem 0.3rem;
+  border-radius: 8px;
+  border: 0.5px solid rgba(15, 23, 42, 0.06);
+  background: linear-gradient(180deg, #fff, #f8fafc);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.note:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(2, 6, 23, 0.08);
+}
+
+.note button {
+  border: none;
+  background: #ef4444;
+  color: #fff;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.note button:hover {
+  background: #b91c1c;
+}
+
+.refresh-rates{
+
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid rgba(15,23,42,0.1);
+  background: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+
+}
+
